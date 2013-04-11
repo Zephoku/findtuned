@@ -77,9 +77,12 @@ footer {
   height: 60px;
   margin-top: 20px;
   small { 
-    margin: 8px 0px 8px 0px;
+    line-height: 1.3em;
+    margin: 14px 0px 8px 0px;
     float: left; 
-    color: black;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
   }
 }
 
@@ -87,8 +90,6 @@ footer {
   background-color: #e8e8e8;
   min-height: 100%;
   height: auto !important;
-  .container: {
-  }
 }
 
 
@@ -108,11 +109,11 @@ footer {
   list-style: none;
   li {
     padding-left: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: none;
     color: white;
     float: left;
-    margin-left: 10px;
+    margin-left: 16px;
   }
 }
 
@@ -121,8 +122,11 @@ footer {
 .head-nav {
   .container {
     height: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
   }
   margin: 20px 0px 20px 0px;
+  //background-color: gray;
   background-color: #e77170;
   -moz-box-shadow: 10px 10px 5px #999;
   -webkit-box-shadow: 10px 10px 5px #999;
@@ -133,23 +137,27 @@ footer {
   .red {
     color: #e77170;
     .placeholder {
-      color: #e77170;
     }
 
   }
   strong {
     margin: 0px;
     padding: 0px;
+    font-weight: bold;
   }
   p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin: 0px;
     padding: 0px;
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   .answer {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1.3em;
     line-height: 1.3em;
+    text-align: justify;
+    letter-spacing: 1px;
 
   }
   .question {
@@ -161,10 +169,15 @@ footer {
   .form-search {
     input {
       border-radius: 1em;
+      font-size: 1.2em;
     }
   }
   .image {
     text-align: center;
+  }
+  .submit-btn {
+    text-align: center;
+    margin: 14px;
   }
 }
 
