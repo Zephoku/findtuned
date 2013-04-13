@@ -1,7 +1,10 @@
 <div class='row'>
   <div class='span5'>
     <p class='question'>What is <strong>FindTuned</strong>?</p>
-  </div>
+    <p class='image'>
+      <%= image_tag("image_home.png", :alt => "image_home")%>
+      </p>  
+    </div>
   <div class='span7'>
     <p class='answer'>
     FindTuned is a website where you can find local musicians to jam with!
@@ -10,7 +13,7 @@
     </p>
 
     <p class='image'>
-    <%= image_tag("guitar.jpg", :alt => "guitar" ) %>
+    <%= image_tag("logo_big.png", :alt => "logo_big") %>
     </p>
 
     <div class='row'>
@@ -38,7 +41,8 @@
       <input class="span3 search red" type="text" placeholder="vocalist">
       <input class="span1 search" type="text" placeholder="90024">
       <div class='submit-btn' >
-          <button class="btn btn-large" type="submit">FIND NOW</button>
+          <!-- <button class="btn btn-large" type="submit">FIND NOW</button> -->
+          <a class="btn btn-large btn-danger" href="#">FIND NOW</a>
         </div>
     </form>
   </div>
