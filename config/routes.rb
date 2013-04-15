@@ -1,7 +1,10 @@
 Findtuned::Application.routes.draw do
-  get "users/new"
-
+  resources :users
   root to: 'static_pages#home'
+
+  #get "users/new"
+  match '/signup',  to: 'users#new'
+
 
   #get "static_pages/home"
   #
