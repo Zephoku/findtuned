@@ -2,6 +2,10 @@ Findtuned::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   root to: 'static_pages#home'
+  
+  # static_pages
+  match '/about', to: 'static_pages#about'
+  match '/contact', to: 'static_pages#contact'
 
   #get "users/new"
   match '/signup',  to: 'users#new'
