@@ -6,7 +6,7 @@
     <ul class="nav nav-pills pull-right">
       <li><%= link_to "ABOUT US", about_path %></li>
       <li><%= link_to "CONTACT",  contact_path %></li>
-      <li><%= link_to "BLOG", '#' %></li>
+      <li><%= link_to "BLOG", blog_path %></li>
       <li class="dropdown">
       <li id="fat-menu" class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -22,8 +22,7 @@
           <%= link_to "Sign out", signout_path, method: "delete" %>
           </li>
         <% else %>
-          <li><%= link_to "SIGN IN", signin_path %></li>
-          <li><%= link_to "SIGN UP", '/signup' %></li>
+          <li><%= link_to "Sign in", signin_path %></li>
         <% end %>
       </ul>
       </li>

@@ -6,6 +6,7 @@ Findtuned::Application.routes.draw do
   # static_pages
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+  match '/blog', to: 'static_pages#blog'
 
   #get "users/new"
   match '/signup',  to: 'users#new'

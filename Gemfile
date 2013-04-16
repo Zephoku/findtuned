@@ -8,6 +8,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.0'
+  gem 'guard-rspec', '2.5.3'
 end
 
 group :development do
