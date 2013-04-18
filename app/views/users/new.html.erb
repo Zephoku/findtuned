@@ -1,24 +1,135 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<div>
+  <div class ="row-fluid">
+    <div class ="span12">
+      <div class = "row-fluid">
+        <div class = "span7">
+          <p class = "title">
+          BUILD YOUR FINDTUNED PROFILE
+          </P>
+        </div>
+        <div class = "span5 pull-right">
+          <P class = "sub-title">
+          It is important to provide all your information to ensure you get the best results and experience from FindTuned!
+          </P>
+        </div>
+      </div>
 
-<div class="row signup">
-  <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
-    <%= render 'shared/error_messages' %>
+      <hr>
 
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+      <div class = "row-fluid pull-right">
+        <div class = "span2">
+          <p class = "sub-section">Name</p>
+          <input type="text" placeholder="first name">
+          <input type="text" placeholder="last name">
+        </div>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+        <div class = "span3">
+          <p class = "sub-section">Email+Passward</p>
+          <input type="text" placeholder="example@ucla.edu">
+          <input type="text" placeholder="******">
+        </div>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+        <div class = "span1">
+          <p class = "sub-section">Gender</p>
+          <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>M</label>
+          <label class="radio">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">F</label>
+        </div>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+        <div class = "span2">
+          <p class = "sub-section">Date of Birth</p>
+          <form class="input form-inline">
+            <input type="text" class="input-smini" placeholder="08">
+            <input type="text" class="input-smini" placeholder="15">
+            <input type="text" class="input-mmini" placeholder="1992">
+          </form>
+        </div>
 
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
-    <% end %>
+        <div class = "span4 row-fluid">
+          <p class = "sub-section">I am a...</p>
+          <div class = "span3">
+            <p class = "subsection">
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Musician</label>
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Non-Musician</label>
+          </div>
+          <div class = "span8">
+            <p class = "sub-section-italic">This will determine your profile type and the rest of the content to fill out
+            </p>
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class ="row-fluid">
+    <div class ="span12">
+      <div class = "row-fluid">
+        <div class = "span7">
+          <p class = "title">
+          MUSICIAN PROFILE
+          </P>
+        </div>
+      </div>
+
+
+      <div class = "row-fluid">
+
+        <div class = "span3">
+          <p class = "sub-section">What do you play?</p>
+          <textarea rows="3" placeholder = "guitar, keybord, vocals"></textarea>
+          <p class = "sub-section-italic">Seperate different terms with commas -- this will add tags to your profile, which will help others to find you!
+          </p>
+        </div>
+
+        <div class = "span3">
+
+          <div class = "span12  sub-section">Looking for BandMates?
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes!</label>
+            <div class = "span9">
+              <p class = "sub-section-small">Who? Add tags.</p>
+              <textarea rows="3" placeholder = "drummer, pianist, triangle"></textarea> </div>
+          </div>
+
+          <div class = "span12">
+            <label class="radio">
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>No, just want to browse.</label>
+            <p class = "sub-section-italic">Don't worry! You can change your mind later.</p>
+          </div>
+        </div>
+
+        <div class = "span4">
+          <p class = "sub-section">A quick word about you.</p>
+          </p>
+          <textarea class ="sub-section-italic" rows="5" placeholder = "Please write a short intro about yourself! Your hobbies, where you grew up, your dreams, goals, favorite artists - anything! This will show up on your profile, and you can always come back and edit is later on."></textarea>
+          <p class = "sub-section">Your music
+          <p class = "sub-section-italic"> + Links to your YouTube or SoundCloud!
+          </p>
+          <input type="text" placeholder="http://youtube/4QHTpeNhO3U">
+          <input type="text" placeholder="http://snd.sc/ZfKQqu">
+          </p>
+        </div>
+
+
+        <div class = "span2">
+          <p class = "sub-section">Photo</p>
+          <button class="btn btn-mini btn-sea" type="button">UPLOAD</button>
+          <%= image_tag("preview.png", :alt => "image_home")%>
+          <p class = "sub-section-italic">[preview]</p>
+          <div class='submit-btn' >
+            <a class="btn btn-large btn-sea" href="#">SUBMIT!</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>

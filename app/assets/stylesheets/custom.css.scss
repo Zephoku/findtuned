@@ -181,6 +181,39 @@ footer {
     text-align: center;
     margin: 14px;
   }
+
+  .title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+  }
+
+  .sub-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.0em;
+    margin-top: 10px;
+  }
+
+  .sub-section{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+  }
+  .sub-section-italic{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-left: 10px;
+  }
+
+  .sub-section-small{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
+    margin-left: 10px;
+  }
 }
 
 .btn-sea {
@@ -228,4 +261,12 @@ footer {
     @extend .control-group;
     @extend .error;
   }
+}
+
+.input-smini{
+  width:30px
+}
+
+.input-mmini{
+  width:45px
 }
