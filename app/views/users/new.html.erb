@@ -78,9 +78,8 @@
             </div>
         </div>
 
-        <hr/>
 
-        <div class = "row-fluid pull-right">
+        <div class = "row-fluid">
 
           <div class = "span3">
             <p class = "sub-section">What do you play?</p>
@@ -91,21 +90,19 @@
 
           <div class = "span3">
             
-            <p class = "sub-section">Looking for BandMates?
-            <label class="radio">
+            <div class = "span12  sub-section">Looking for BandMates?
+              <label class="radio">
               <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes!</label>
+                <div class = "span9">
+                  <p class = "sub-section-small">Who? Add tags.</p>
+                  <textarea rows="3" placeholder = "drummer, pianist, triangle"></textarea> </div>
+            </div>
 
-              <div class = "span9">
-                <p class = "sub-section-small">Who? Add tags.</p>
-               <textarea rows="3" placeholder = "drummer, pianist, triangle"></textarea> </div>
-              </p>
-
-            <p>
+            <div class = "span12">
             <label class="radio">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>No, just want to browse.</label>
-              <p class = "sub-section-italic">Don't worry! You can change your mind later.
-            </p>
-          </p>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>No, just want to browse.</label>
+              <p class = "sub-section-italic">Don't worry! You can change your mind later.</p>
+          </div>
         </div>
 
           <div class = "span4">
@@ -124,9 +121,9 @@
           <div class = "span2">
             <p class = "sub-section">Photo</p>
             <button class="btn btn-mini btn-sea" type="button">UPLOAD</button>
-            <%= image_tag("image_home.png", :alt => "image_home")%>
+            <%= image_tag("preview.png", :alt => "image_home")%>
+            <p class = "sub-section-italic">[preview]</p>
             <div class='submit-btn' >
-          <!-- <button class="btn btn-large" type="submit">FIND NOW</button> -->
           <a class="btn btn-large btn-sea" href="#">SUBMIT!</a>
         </div>
 
