@@ -15,12 +15,14 @@ logo_small.png: logo_small-8284433ad48d14d3da2361b1ad88c68f.png
 logo_small/index.png: logo_small-8284433ad48d14d3da2361b1ad88c68f.png
 main.jpg: main-587eedf0b7ddf056d33c7cdfd8b706f1.jpg
 main/index.jpg: main-587eedf0b7ddf056d33c7cdfd8b706f1.jpg
+preview.png: preview-26c376cae50cea18154348ff42485732.png
+preview/index.png: preview-26c376cae50cea18154348ff42485732.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 application.js: application-1612401d70993925151f3f27b256191a.js
 application/index.js: application-1612401d70993925151f3f27b256191a.js
-application.css: application-f91795049920cf3c98a40ad5c98e279f.css
-application/index.css: application-f91795049920cf3c98a40ad5c98e279f.css
+application.css: application-dde185843089886a757785cb71b4672a.css
+application/index.css: application-dde185843089886a757785cb71b4672a.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
